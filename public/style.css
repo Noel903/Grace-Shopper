@@ -1,0 +1,154 @@
+#top{
+   
+    background-image: url("./Images/CoffeeItemsOverheadOnWhite.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:30px;
+    background-size: cover; 
+    color:#D29F06 ; 
+    font-family: 'Berkshire Swash', cursive;
+}
+#title{
+    background-color: black;
+    border-radius: 5px;
+    width:250px;
+    padding: 5px;
+    text-align: center;
+}
+#slogan{
+    padding: 3px;
+    background-color: black;
+    border-radius: 5px;
+    width:150px;
+    margin: 5px;
+
+}
+#afterLoginGreeting{
+    background-color: #D29F06;
+    border-radius: 5px;
+    border:black;
+    width:250px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Berkshire Swash', cursive;
+    height :100px;
+    width: 150px;
+}
+#hello #checkoutInstruction{
+    font-family: 'Berkshire Swash', cursive;
+    color:black;
+}
+h2{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#creditCardSection{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+#purchase {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#D29F06;
+padding: 5px;
+margin: 5px;
+
+}
+#checkoutInfo{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#D29F06;
+    padding: 5px;
+    margin: 5px;
+    
+    }
+
+#item{
+    display:flex;
+    flex-direction: wrap;
+    justify-content: center; 
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    
+}
+ #itempart {
+    display:flex;
+    flex-direction: wrap;
+    justify-content: center; 
+    padding: 5px;
+    margin: 5px;
+    
+}
+ /* #orderHistory {
+    display:flex;
+    flex-direction: wrap;
+    justify-content: center; 
+    padding: 5px;
+    margin: 5px;
+    
+} */
+
+#product-title {
+    font-size: xx-large;
+}
+
+.container {
+    display: flex;
+}
+
+#text {
+    font-size: x-large;
+}
+
+#review-title {
+    font-size: 2.0em;
+}
+
+.image-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#review-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#product {
+   margin-top: 15px;
+   margin-left: 50px;
+}
+
+#review-form-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#review-form {
+    border: solid black 3px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+input {
+    width: auto;
+    padding: 20px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+input[type="text"] {
+    font-size: 1.5em;
+}
