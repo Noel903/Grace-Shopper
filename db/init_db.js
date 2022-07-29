@@ -130,7 +130,7 @@ async function populateInitialData() {
     // Products
     console.log('Starting to create products...');
     const productsToCreate = [
-        { title: 'Tall Coffee Ceramic Mug', description: 'Holds 20oz.  8in tall. porcelain', price:50, inventoryQuantity:100 , category:'mug' , image:'https://www.qualitylogoproducts.com/custom-mugs/tall-java-latte-black-mug16oz-hq-362181.jpg',isActive:true },
+        { title: 'GMC Sierra 2022', description: 'AT4 model, Sand dune color', price:50000, inventoryQuantity:10 , category:'Trucks' , image:'https://gmauthority.com/blog/wp-content/uploads/2022/03/2022-GMC-Sierra-1500-Desert-Sand-Metallic-GTL-001.jpg',isActive:true },
         { title: 'Short Coffee Ceramic Mug', description: 'Holds 10oz.  5in tall. Clay',  price: 35, inventoryQuantity:36 , category:'mug' , image:'https://m.media-amazon.com/images/I/61kli8LJpuL._AC_SL1500_.jpg', isActive:true },
         { title: 'Mickey Mouse Ceramic Mug', description: 'Holds 6.5oz.  4in tall. Clay',  price: 25, inventoryQuantity:0 , category:'mug' , image:undefined ,isActive:false},
         { title: 'Insulated Aluminum Tall Coffee Mug', description: 'Holds 20oz.  8in tall. Aluminum with clear plastic lid. No handle.',  price:50, inventoryQuantity:47 , category:'mug' ,image:'https://i5.walmartimages.com/asr/6840cfd9-7711-47aa-9296-317c66fb2e05.9db4105357a927a4fcf418c7e1c60095.jpeg', isActive:true },
