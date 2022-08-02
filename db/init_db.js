@@ -115,11 +115,11 @@ async function populateInitialData() {
   try {
     // users
     const usersToCreate = [
-        { username: 'albert', password: 'bertie99', email:'albert@coffeemail.com' },
-        { username: 'sandra', password: 'sandra123', email:'sandra@coffeemail.com' },
-        { username: 'glamgal', password: 'glamgal123', email:'glamgal@coffeemail.com' },
-        { username: 'pruplebarny', password: 'barney123', email:'barney@coffeemail.com' },
-        { username: 'lauren', password: 'lauren123', email:'lauren@coffeemail.com', isAdmin:true },
+        { username: 'albert', password: 'bertie99', email:'albert@carsalesmail.com' },
+        { username: 'sandra', password: 'sandra123', email:'sandra@carsalesmail.com' },
+        { username: 'glamgal', password: 'glamgal123', email:'glamgal@carsalesmail.com' },
+        { username: 'pruplebarny', password: 'barney123', email:'barney@carsalesmail.com' },
+        { username: 'lauren', password: 'lauren123', email:'lauren@carsalesmail.com', isAdmin:true },
     ];
 
     const users = await Promise.all(usersToCreate.map(createUser));
@@ -178,9 +178,9 @@ async function populateInitialData() {
     // Checkout
     console.log('starting to create checkouts...');
     const checkoutsToCreate = [
-        { userId: 1, firstName: "Margret", lastName:'Bridger',street:"123 Walk St", city:"Atlanta", state:"GA",zip:"12345", creditCardNumber: '6789123456780987', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '4445556678', orders: [ {orderId:2,price:40},{orderId:3,price:60},{orderId:4,price:23} ] },
-        { userId: 2, firstName: "Daniel", lastName:'Flith',street:"678 Garbage Blvd", city:"Stink Town", state:"GA",zip:"54321", creditCardNumber: '3245673481981234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:5,price:42},{orderId:6,price:30},{orderId:7,price:26} ] },
-        { userId: 3, firstName: "Clam Aquatics", lastName:'Business',street:"734 Ocean Blvd", city:"Fish City", state:"GA",zip:"44321", creditCardNumber: '3245674780581234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:1,price:90}] },
+        { userId: 1, firstName: "Margret", lastName:'Bridger',street:"123 Walk St", city:"Atlanta", state:"TX",zip:"12345", creditCardNumber: '6789123456780987', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '4445556678', orders: [ {orderId:2,price:40},{orderId:3,price:60},{orderId:4,price:23} ] },
+        { userId: 2, firstName: "Daniel", lastName:'Flith',street:"678 Garbage Blvd", city:"Stink Town", state:"TX",zip:"54321", creditCardNumber: '3245673481981234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:5,price:42},{orderId:6,price:30},{orderId:7,price:26} ] },
+        { userId: 3, firstName: "Clam Aquatics", lastName:'Business',street:"734 Ocean Blvd", city:"Fish City", state:"TX",zip:"44321", creditCardNumber: '3245674780581234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:1,price:90}] },
     ];
 
     const checkouts = await Promise.all(checkoutsToCreate.map(createCheckout));
