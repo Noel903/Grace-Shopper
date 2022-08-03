@@ -178,9 +178,9 @@ async function populateInitialData() {
     // Checkout
     console.log('starting to create checkouts...');
     const checkoutsToCreate = [
-        { userId: 1, firstName: "Margret", lastName:'Bridger',street:"123 Walk St", city:"Atlanta", state:"TX",zip:"12345", creditCardNumber: '6789123456780987', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '4445556678', orders: [ {orderId:2,price:40},{orderId:3,price:60},{orderId:4,price:23} ] },
-        { userId: 2, firstName: "Daniel", lastName:'Flith',street:"678 Garbage Blvd", city:"Stink Town", state:"TX",zip:"54321", creditCardNumber: '3245673481981234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:5,price:42},{orderId:6,price:30},{orderId:7,price:26} ] },
-        { userId: 3, firstName: "Clam Aquatics", lastName:'Business',street:"734 Ocean Blvd", city:"Fish City", state:"TX",zip:"44321", creditCardNumber: '3245674780581234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:1,price:90}] },
+        { userId: 1, firstName: "Becky G ", lastName:'Bridger',street:"123 Walk St", city:"Dallas", state:"TX",zip:"72345", creditCardNumber: '6789123456780987', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '4445556678', orders: [ {orderId:2,price:40},{orderId:3,price:60},{orderId:4,price:23} ] },
+        { userId: 2, firstName: "Chase", lastName:'Flith',street:"678 Garbage Blvd", city:"Orlando", state:"TX",zip:"72321", creditCardNumber: '3245673481981234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:5,price:42},{orderId:6,price:30},{orderId:7,price:26} ] },
+        { userId: 3, firstName: "Alex", lastName:'Business',street:"734 Ocean Blvd", city:"Rockwall", state:"TX",zip:"75321", creditCardNumber: '3245674780581234', creditCardExp:"09/30" , creditValidationNumber:"833", phone: '3336669129', orders: [ {orderId:1,price:90}] },
     ];
 
     const checkouts = await Promise.all(checkoutsToCreate.map(createCheckout));
@@ -190,21 +190,21 @@ async function populateInitialData() {
     // Reviews
     console.log('starting to create reviews...');
     const reviewsToCreate = [
-        { productId: 1, userId: 1, message:'Feels nice in my hands. Keeps coffee warm.' },
-        { productId: 2, userId: 1, message:'This was a thoughtful gift. I think of the gift giver every morning!'},
-        { productId: 3, userId: 2, message:'This is perfect for the Disney enthusiast.'},
-        { productId: 4, userId: 2, message:'It is great for my morning commute. No spills.'},
-        { productId: 5, userId: 1, message:'I like the security of the lid and the handle for walking around the office.' },
-        { productId: 6, userId: 3, message:'Keeps my coffee warm all morning. Can make the mug a little hot to the touch.' },
-        { productId: 7, userId: 3, message:'I love to write about different coffees I have tried during my travels. I hope to write a book with these notes.' },
-        { productId: 8, userId: 3, message:'This brews plenty of coffee for my family.' },
-        { productId: 9, userId: 2, message:'This smaller pot is great for tight spaces.' },
-        { productId: 10, userId: 4, message:'Great flavor and easy to use.' },
-        { productId: 11, userId: 4, message:'Durable and makes great flavored coffee. Great size for my 3 morning cups.' },
+        { productId: 1, userId: 1, message:'Fast and nice, always turns heads.' },
+        { productId: 2, userId: 1, message:'NECK BREAKER, this will have you sending people to the hostpital!'},
+        { productId: 3, userId: 2, message:'Ole Reliable, perfect for road trips.'},
+        { productId: 4, userId: 2, message:'It is great for my morning commute.'},
+        { productId: 5, userId: 1, message:'I like to put pressure aroind me and this is the vehicle for it.' },
+        { productId: 6, userId: 3, message:'Keeps me sane I love it.' },
+        { productId: 7, userId: 3, message:'I love to write about different rides I have tried during my travels. I hope to write a book with this one.' },
+        { productId: 8, userId: 3, message:'This one has plenty of room for the family.' },
+        { productId: 9, userId: 2, message:'Best grocery getter.' },
+        { productId: 10, userId: 4, message:'Ask me how long it takes me to get home I dare ya.' },
+        { productId: 11, userId: 4, message:'Duraable, realiable, and good looking. A ' },
         { productId: 12, userId: 2, message:'Matches my decor.' },
-        { productId: 13, userId: 4, message:'Looks great above my coffee bar in my kitchen.' },
-        { productId: 15, userId: 2, message:'It is durable and great finish. I store all my living room extra items.' },
-        { productId: 17, userId: 4, message:'Great flavor, every month. I plan to buy another next year.' },
+        { productId: 13, userId: 4, message:'Love it too infinity.' },
+        { productId: 15, userId: 2, message:'This is so cool, when I post pics of it, even Disney knows how hard my pixar.' },
+        { productId: 17, userId: 4, message:'Great flavor, every ride. I plan to buy another one.' },
         { productId: 10, userId: 2, message:'Just the right size and consistent' },
     ];
     const reviews = await Promise.all(reviewsToCreate.map(createReview));
